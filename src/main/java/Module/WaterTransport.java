@@ -31,7 +31,7 @@ public class WaterTransport extends Transport {
     }
 
     @Override
-    protected void showInfo() {
+    public void showInfo() {
         System.out.println("Water transport information: ");
         super.showInfo();
     }

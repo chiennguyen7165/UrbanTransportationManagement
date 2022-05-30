@@ -31,7 +31,7 @@ public class AirTransport extends Transport  {
     }
 
     @Override
-    protected void showInfo() {
+    public void showInfo() {
         System.out.println("Air transport information: ");
         super.showInfo();
     }

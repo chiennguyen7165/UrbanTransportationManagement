@@ -71,9 +71,9 @@ public class Transport {
         this.type = type;
     }
 
-    protected void showInfo() {
+    public void showInfo() {
         System.out.println("-  1. ID: " + this.getId());
-        System.out.println("-  2. Type of Module.Transport: " + this.getType());
+        System.out.println("-  2. Type of Transport: " + this.getType());
         System.out.println("-  3. Name: " + this.getName());
         System.out.println("-  4. Number of seats: " + this.getSeat());
         System.out.println("-  5. Manufacturer: " + this.getManufacturer());

@@ -32,8 +32,10 @@ public class RoadTransport extends Transport {
     }
 
     @Override
-    protected void showInfo() {
+    public void showInfo() {
         System.out.println("Road Transport Information: ");
         super.showInfo();
     }
+
+
 }
