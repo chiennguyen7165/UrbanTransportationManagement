@@ -11,8 +11,9 @@ public class Main {
 //        hello.addTransport(listTrans, newRoadTrans);
 //        hello.showTransport(listTrans);
 //        newRoadTrans.showInfo();
-        String removeId = hello.getTransportID();
-        hello.removeTransport(listTrans,removeId);
+        String updateID = hello.getTransportID(listTrans);
+//        hello.removeTransport(listTrans,removeId);
+        hello.updateTransport(listTrans, updateID);
         hello.showTransport(listTrans);
     }
 }

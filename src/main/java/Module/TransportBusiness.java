@@ -65,20 +65,53 @@ public class TransportBusiness {
         lstTransport.put(newTrans.getId(), newTrans);
     }
 
-    public String getTransportID(){
-        System.out.print("Enter the id of transport you want remove: ");
-        String id = sc.nextLine();
+    public String getTransportID(HashMap<String, Transport> lstTransport){
+        int result = 0;
+        String id = null;
+        while (result == 0 ){
+            System.out.print("Enter the id of transport: ");
+            id = sc.nextLine();
+            for (Map.Entry<String, Transport> tran : lstTransport.entrySet()) {
+                if (tran.getKey().equals(id)) {
+                    result = 1;
+                    break;
+                }
+            }
+            if (result == 0) {
+                System.out.println("Invalid Id, please try again.");
+            }
+        }
         return id;
     }
 
     public void removeTransport(HashMap<String, Transport> lstTransport, String idTrans) {
-        boolean result = false;
-        for (Map.Entry<String, Transport> tran : lstTransport.entrySet()) {
-            if (tran.getKey().equals(idTrans)) {
-                lstTransport.remove(idTrans);
-                System.out.println("Successful");
-                break;
-            }
-        }
+        lstTransport.remove(idTrans);
+        System.out.println("Successful");
     }
+
+    public void updateTransport(HashMap<String, Transport> lstTransport, String idTrans) {
+        Transport tran = lstTransport.get(idTrans);
+        System.out.println("Update a transport with id is " +idTrans);
+        System.out.print("Get a new name: ");
+        String newName = sc.nextLine();
+        tran.setName(newName);
+
+        System.out.print("Get a new type: ");
+        String newType = sc.nextLine();
+        tran.setType(newType);
+
+        System.out.print("Get a new number of seats: ");
+        int newSeat = Integer.parseInt(sc.nextLine());
+        tran.setSeat(newSeat);
+
+        System.out.print("Get a new manufacturer: ");
+        String newManu = sc.nextLine();
+        tran.setManufacturer(newManu);
+
+        System.out.print("Get a new regis number: ");
+        String newRegis = sc.nextLine();
+        tran.setRegisNumber(newRegis);
+    }
+
+
 }
