@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="955846e5-94d6-4c33-8894-354a83e6515f" name="Changes" comment="4th Commit&#10;Add update methods">
+    <list default="true" id="955846e5-94d6-4c33-8894-354a83e6515f" name="Changes" comment="5th Commit&#10;Connect DB methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Module/DataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Module/DataProvider.java" afterDir="false" />
     </list>
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653900122065</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5th Commit&#10;Connect DB methods">
+      <created>1653972879871</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653972879871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +120,7 @@
     <MESSAGE value="Second Commit&#10;Create TransportBusiness class with some new methods" />
     <MESSAGE value="Third Commit&#10;Add CRUD methods" />
     <MESSAGE value="4th Commit&#10;Add update methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th Commit&#10;Add update methods" />
+    <MESSAGE value="5th Commit&#10;Connect DB methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="5th Commit&#10;Connect DB methods" />
   </component>
 </project>
